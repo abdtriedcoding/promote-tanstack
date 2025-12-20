@@ -15,17 +15,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://justfuckingusetanstack.vercel.app"),
   title: "Just Fucking Use TanStack",
   description: "Stop writing boilerplate. Stop fighting your framework. TanStack has you covered.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "Just Fucking Use TanStack",
     description: "Stop writing boilerplate. Stop fighting your framework. TanStack has you covered.",
     type: "website",
+    images: ["/logo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Just Fucking Use TanStack",
     description: "Stop writing boilerplate. Stop fighting your framework. TanStack has you covered.",
+    images: ["/logo.png"],
   },
 };
 
