@@ -317,10 +317,10 @@ export default function Home() {
           <p>
             Slop by Claude Opus 4.5, prompted by{" "}
             <a href="https://x.com/abdtriedcode" target="_blank" rel="noopener noreferrer" className="text-white underline">abdtriedcode</a>,{" "}
-            powered by{" "}
-            <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-white underline">Next.js</a>,{" "}
-            <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" className="text-white underline">Tailwind</a>,{" "}
-            and obviously{" "}
+            built with{" "}
+            <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="text-white underline">Next.js</a> and{" "}
+            <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" className="text-white underline">Tailwind</a>.{" "}
+            Now go use{" "}
             <a href="https://tanstack.com" target="_blank" rel="noopener noreferrer" className="text-white underline">TanStack</a>.
           </p>
           <div className="flex justify-center gap-6 pt-4">
