@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Just Fucking Use TanStack
 
-## Getting Started
+A promotional one-page website inspired by [justfuckingusenuqs.dev](https://justfuckingusenuqs.dev/), advocating for TanStack (Query, Router, Table, Form, Virtual).
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Typography**: Crimson Pro (serif) + Geist Mono (monospace)
+- **Language**: TypeScript
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── globals.css    # Global styles, animations, custom components
+│   ├── layout.tsx     # Root layout with fonts and metadata
+│   └── page.tsx       # Main one-page site with all sections
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Dark theme** with black background and white/gray typography
+- **Rainbow gradient text** animation for section headers
+- **Syntax-highlighted code blocks** showcasing TanStack APIs
+- **Responsive design** that scales from mobile to desktop
+- **Accessible** semantic HTML structure
+- **Static generation** for optimal performance
 
-## Deploy on Vercel
+## 📦 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This site can be deployed to any platform that supports Next.js:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Vercel (Recommended)
+
+```bash
+npx vercel
+```
+
+### Other Platforms
+
+```bash
+npm run build
+# Deploy the .next folder or export as static site
+```
+
+## 🔗 Links
+
+- [TanStack Official Site](https://tanstack.com)
+- [TanStack Query Docs](https://tanstack.com/query)
+- [TanStack Router Docs](https://tanstack.com/router)
+- [TanStack Table Docs](https://tanstack.com/table)
+- [TanStack Form Docs](https://tanstack.com/form)
+- [TanStack Virtual Docs](https://tanstack.com/virtual)
+
+## 📝 License
+
+MIT - Do whatever the fuck you want with it.

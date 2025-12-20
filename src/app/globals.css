@@ -1,26 +1,168 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --muted: #888888;
+  --accent: #ff6b35;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+::selection {
+  background: #ff6b35;
+  color: #000;
+}
+
+/* Hero title styling */
+.hero-title {
+  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* Rainbow gradient text effect */
+.rainbow-text {
+  background: linear-gradient(
+    90deg,
+    #ff0080,
+    #ff8c00,
+    #ffcc00,
+    #00ff88,
+    #00cfff,
+    #8b5cf6,
+    #ff0080
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Code block styling */
+.code-block {
+  background: #111111;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 1.5rem;
+  font-family: var(--font-mono), 'Fira Code', 'Monaco', monospace;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+/* Syntax highlighting colors */
+.token-keyword { color: #ff79c6; }
+.token-string { color: #f1fa8c; }
+.token-function { color: #50fa7b; }
+.token-comment { color: #6272a4; }
+.token-type { color: #8be9fd; }
+.token-variable { color: #bd93f9; }
+.token-property { color: #ff6b35; }
+.token-number { color: #ffb86c; }
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #333, transparent);
+}
+
+/* CTA Button */
+.cta-button {
+  background: #ffffff;
+  color: #000000;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Install command button */
+.install-cmd {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #00ff88;
+  font-family: var(--font-mono), monospace;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.install-cmd:hover {
+  background: #222;
+  border-color: #444;
+}
+
+/* Feature card */
+.feature-card {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+  border-color: #333;
+  background: #111;
+}
+
+/* Objection card */
+.objection-card {
+  background: linear-gradient(135deg, #0a0a0a 0%, #111 100%);
+  border-left: 3px solid #ff6b35;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
 }
